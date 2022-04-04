@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace practice02
@@ -26,8 +19,29 @@ namespace practice02
             _temperatureData = new Data(listBoxTemperature, chartTemperature, 0, DataType.Temperature);
             _pressureData = new Data(listBoxPressure, chartPressure, 0, DataType.Pressure);
             _humidityData = new Data(listBoxHumidity, chartHumidity, 0, DataType.Humidity);
-
             SetNumerics();
+
+            SetTemperature();
+            SetPressure();
+            SetHumidity();
+        }
+
+        private void SetHumidity()
+        {
+            textBoxAvarageHumidity.Text = _humidityData.Count == 0 ? "Нет данных" : _humidityData.Average.ToString();
+            textBoxPrognosisHumidity.Text = _humidityData.Count == 0 ? "Нет данных" : _humidityData.Prognosis.ToString();
+        }
+
+        private void SetPressure()
+        {
+            textBoxAvaragePressure.Text = _pressureData.Count == 0 ? "Нет данных" : _pressureData.Average.ToString();
+            textBoxPrognosisPressure.Text = _pressureData.Count == 0 ? "Нет данных" : _pressureData.Prognosis.ToString();
+        }
+
+        private void SetTemperature()
+        {
+            textBoxAvarageaTemperature.Text = _temperatureData.Count == 0 ? "Нет данных" : _temperatureData.Average.ToString();
+            textBoxPrognosisTemperature.Text = _temperatureData.Count == 0 ? "Нет данных" : _temperatureData.Prognosis.ToString();
         }
 
         private void SetNumerics()
@@ -36,8 +50,8 @@ namespace practice02
             numericUpDownMinTemperature.Maximum = DataController.MaxTemperature - 1;
             numericUpDownMaxTemperature.Minimum = DataController.MinTemperature + 1;
             numericUpDownMaxTemperature.Maximum = DataController.MaxTemperature;
-            numericUpDownMinTemperature.Value=numericUpDownMinTemperature.Minimum;
-            numericUpDownMaxTemperature.Value=numericUpDownMaxTemperature.Maximum;
+            numericUpDownMinTemperature.Value = numericUpDownMinTemperature.Minimum;
+            numericUpDownMaxTemperature.Value = numericUpDownMaxTemperature.Maximum;
 
             numericUpDownMinPressure.Minimum = DataController.MinPressure;
             numericUpDownMinPressure.Maximum = DataController.MaxPressure - 1;
@@ -58,18 +72,21 @@ namespace practice02
         {
             _temperatureData.Generate((int)numericUpDownMinTemperature.Value,
                                       (int)numericUpDownMaxTemperature.Value);
+            SetTemperature();
         }
 
         private void buttonGeneratePressure_Click(object sender, EventArgs e)
         {
             _pressureData.Generate((int)numericUpDownMinPressure.Value,
                                    (int)numericUpDownMaxPressure.Value);
+            SetPressure();
         }
 
         private void buttonGenerateHumidity_Click(object sender, EventArgs e)
         {
             _humidityData.Generate((int)numericUpDownMinHumidity.Value,
                                    (int)numericUpDownMaxHumidity.Value);
+            SetHumidity();
         }
 
         private void buttonAddTemperature_Click(object sender, EventArgs e)
@@ -79,6 +96,7 @@ namespace practice02
                 double value = Convert.ToDouble(textBoxAddTemperature.Text);
 
                 _temperatureData.Add(Math.Round(value, 3));
+                SetTemperature();
             }
             catch (Exception ex)
             {
@@ -93,6 +111,7 @@ namespace practice02
                 double value = Convert.ToDouble(textBoxAddPressure.Text);
 
                 _pressureData.Add(Math.Round(value, 3));
+                SetPressure();
             }
             catch (Exception ex)
             {
@@ -107,6 +126,7 @@ namespace practice02
                 double value = Convert.ToDouble(textBoxAddHumidity.Text);
 
                 _humidityData.Add(Math.Round(value, 3));
+                SetHumidity();
             }
             catch (Exception ex)
             {
@@ -123,6 +143,8 @@ namespace practice02
             else
             {
                 _temperatureData.RemoveAt(listBoxTemperature.SelectedIndex);
+
+                SetTemperature();
             }
         }
 
@@ -135,6 +157,7 @@ namespace practice02
             else
             {
                 _pressureData.RemoveAt(listBoxTemperature.SelectedIndex);
+                SetPressure();
             }
         }
 
@@ -147,22 +170,27 @@ namespace practice02
             else
             {
                 _humidityData.RemoveAt(listBoxTemperature.SelectedIndex);
+                SetHumidity();
             }
         }
 
         private void buttonResetTemperature_Click(object sender, EventArgs e)
         {
             _temperatureData.Clear();
+
+            SetTemperature();
         }
 
         private void buttonResetPressure_Click(object sender, EventArgs e)
         {
             _pressureData.Clear();
+            SetPressure();
         }
 
         private void buttonResetHumidity_Click(object sender, EventArgs e)
         {
             _humidityData.Clear();
+            SetHumidity();
         }
     }
 }

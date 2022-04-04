@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -24,7 +22,7 @@ namespace practice02
             var result = new List<double>();
 
             int range = Math.Abs(min - max);
-            double normalDeviation = (double)range / 100 * 10; // ожидаемое отклонение от предыдущего значения - не больше 10% 
+            double normalDeviation = (double)range / 100 * 10; // ожидаемое отклонение - не больше 10% 
 
             for (int i = 0; i < 30; i++)
             {
@@ -47,37 +45,28 @@ namespace practice02
             return result;
         }
 
-        public static List<double> GetTemperatureData()
-        {
-            return GetData(MinTemperature, MaxTemperature);
-        }
+        public static List<double> GetTemperatureData() => GetData(MinTemperature, MaxTemperature);
+        public static List<double> GetTemperatureData(int min, int max) => GetData(min, max);
 
-        public static List<double> GetTemperatureData(int min, int max)
-        {
-            return GetData(min, max);
-        }
+        public static List<double> GetPressureData() => GetData(MinPressure, MaxPressure);
+        public static List<double> GetPressureData(int min, int max) => GetData(min, max);
 
-        public static List<double> GetPressureData()
-        {
-            return GetData(MinPressure, MaxPressure);
-        }
-        public static List<double> GetPressureData(int min, int max)
-        {
-            return GetData(min, max);
-        }
-
-        public static List<double> GetHumidityData()
-        {
-            return GetData(MinHumidity, MaxHumidity);
-        }
-        public static List<double> GetHumidityData(int min, int max)
-        {
-            return GetData(min, max);
-        }
+        public static List<double> GetHumidityData() => GetData(MinHumidity, MaxHumidity);
+        public static List<double> GetHumidityData(int min, int max) => GetData(min, max);
     }
 
-    internal struct Data
+    public struct Data
     {
+        public Data(List<double> values)
+        {
+            _values = values;
+
+            _listBox = new ListBox();
+            _chart = new Chart();
+            _myIndex = 0;
+            _dataType = DataType.Temperature;
+        }
+
         public Data(ListBox listBox, Chart chart, int myIndex, DataType dataType)
         {
             _listBox = listBox;
@@ -95,6 +84,27 @@ namespace practice02
 
         private DataType _dataType;
         private List<double> _values;
+        public int Count => _values.Count;
+
+        public double Average => Math.Round(_values.Average(), 3);
+
+        private double _deviation => Math.Abs(Average / 100 * 10);
+
+        public double Prognosis
+        {
+            get
+            {
+                Random random = new Random();
+                double result = Average + random.Next(-(int)_deviation, (int)_deviation) + random.NextDouble();
+
+                while (result < _values.Min() || result > _values.Max())
+                {
+                    result = Average + random.Next(-(int)_deviation, (int)_deviation - 1) + random.NextDouble();
+                }
+
+                return Math.Round(result, 3);
+            }
+        }
 
         public void Generate()
         {

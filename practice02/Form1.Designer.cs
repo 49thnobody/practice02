@@ -28,29 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea38 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea39 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea37 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageTemperature = new System.Windows.Forms.TabPage();
-            this.tabPagePressure = new System.Windows.Forms.TabPage();
-            this.tabPageHumidity = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDownMinTemperature = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownMaxTemperature = new System.Windows.Forms.NumericUpDown();
-            this.buttonGenerateTemperature = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBoxAddTemperature = new System.Windows.Forms.TextBox();
-            this.buttonAddTemperature = new System.Windows.Forms.Button();
-            this.chartTemperature = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.listBoxTemperature = new System.Windows.Forms.ListBox();
-            this.buttonResetTemperature = new System.Windows.Forms.Button();
             this.buttonDeleteTemperature = new System.Windows.Forms.Button();
+            this.buttonResetTemperature = new System.Windows.Forms.Button();
+            this.listBoxTemperature = new System.Windows.Forms.ListBox();
+            this.chartTemperature = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonAddTemperature = new System.Windows.Forms.Button();
+            this.textBoxAddTemperature = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonGenerateTemperature = new System.Windows.Forms.Button();
+            this.numericUpDownMaxTemperature = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMinTemperature = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPagePressure = new System.Windows.Forms.TabPage();
             this.buttonDeletePressure = new System.Windows.Forms.Button();
             this.buttonResetPressure = new System.Windows.Forms.Button();
             this.listBoxPressure = new System.Windows.Forms.ListBox();
@@ -64,6 +63,7 @@
             this.numericUpDownMinPressure = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.tabPageHumidity = new System.Windows.Forms.TabPage();
             this.buttonDeleteHumidity = new System.Windows.Forms.Button();
             this.buttonResetHumidity = new System.Windows.Forms.Button();
             this.listBoxHumidity = new System.Windows.Forms.ListBox();
@@ -77,20 +77,32 @@
             this.numericUpDownMinHumidity = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxAvarageaTemperature = new System.Windows.Forms.TextBox();
+            this.textBoxPrognosisTemperature = new System.Windows.Forms.TextBox();
+            this.textBoxPrognosisPressure = new System.Windows.Forms.TextBox();
+            this.textBoxAvaragePressure = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxPrognosisHumidity = new System.Windows.Forms.TextBox();
+            this.textBoxAvarageHumidity = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPageTemperature.SuspendLayout();
-            this.tabPagePressure.SuspendLayout();
-            this.tabPageHumidity.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinTemperature)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxTemperature)).BeginInit();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxTemperature)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinTemperature)).BeginInit();
+            this.tabPagePressure.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartPressure)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxPressure)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinPressure)).BeginInit();
+            this.tabPageHumidity.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartHumidity)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -111,6 +123,10 @@
             // 
             // tabPageTemperature
             // 
+            this.tabPageTemperature.Controls.Add(this.textBoxPrognosisTemperature);
+            this.tabPageTemperature.Controls.Add(this.textBoxAvarageaTemperature);
+            this.tabPageTemperature.Controls.Add(this.label8);
+            this.tabPageTemperature.Controls.Add(this.label7);
             this.tabPageTemperature.Controls.Add(this.buttonDeleteTemperature);
             this.tabPageTemperature.Controls.Add(this.buttonResetTemperature);
             this.tabPageTemperature.Controls.Add(this.listBoxTemperature);
@@ -125,37 +141,74 @@
             this.tabPageTemperature.Text = "Температура";
             this.tabPageTemperature.UseVisualStyleBackColor = true;
             // 
-            // tabPagePressure
+            // buttonDeleteTemperature
             // 
-            this.tabPagePressure.Controls.Add(this.buttonDeletePressure);
-            this.tabPagePressure.Controls.Add(this.buttonResetPressure);
-            this.tabPagePressure.Controls.Add(this.listBoxPressure);
-            this.tabPagePressure.Controls.Add(this.chartPressure);
-            this.tabPagePressure.Controls.Add(this.groupBox3);
-            this.tabPagePressure.Controls.Add(this.groupBox4);
-            this.tabPagePressure.Location = new System.Drawing.Point(4, 22);
-            this.tabPagePressure.Name = "tabPagePressure";
-            this.tabPagePressure.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePressure.Size = new System.Drawing.Size(777, 452);
-            this.tabPagePressure.TabIndex = 1;
-            this.tabPagePressure.Text = "Давление";
-            this.tabPagePressure.UseVisualStyleBackColor = true;
+            this.buttonDeleteTemperature.Location = new System.Drawing.Point(554, 416);
+            this.buttonDeleteTemperature.Name = "buttonDeleteTemperature";
+            this.buttonDeleteTemperature.Size = new System.Drawing.Size(109, 23);
+            this.buttonDeleteTemperature.TabIndex = 5;
+            this.buttonDeleteTemperature.Text = "Удалить";
+            this.buttonDeleteTemperature.UseVisualStyleBackColor = true;
+            this.buttonDeleteTemperature.Click += new System.EventHandler(this.buttonDeleteTemperature_Click);
             // 
-            // tabPageHumidity
+            // buttonResetTemperature
             // 
-            this.tabPageHumidity.Controls.Add(this.buttonDeleteHumidity);
-            this.tabPageHumidity.Controls.Add(this.buttonResetHumidity);
-            this.tabPageHumidity.Controls.Add(this.listBoxHumidity);
-            this.tabPageHumidity.Controls.Add(this.chartHumidity);
-            this.tabPageHumidity.Controls.Add(this.groupBox5);
-            this.tabPageHumidity.Controls.Add(this.groupBox6);
-            this.tabPageHumidity.Location = new System.Drawing.Point(4, 22);
-            this.tabPageHumidity.Name = "tabPageHumidity";
-            this.tabPageHumidity.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHumidity.Size = new System.Drawing.Size(777, 452);
-            this.tabPageHumidity.TabIndex = 2;
-            this.tabPageHumidity.Text = "Влажность";
-            this.tabPageHumidity.UseVisualStyleBackColor = true;
+            this.buttonResetTemperature.Location = new System.Drawing.Point(662, 416);
+            this.buttonResetTemperature.Name = "buttonResetTemperature";
+            this.buttonResetTemperature.Size = new System.Drawing.Size(109, 23);
+            this.buttonResetTemperature.TabIndex = 4;
+            this.buttonResetTemperature.Text = "Сбросить";
+            this.buttonResetTemperature.UseVisualStyleBackColor = true;
+            this.buttonResetTemperature.Click += new System.EventHandler(this.buttonResetTemperature_Click);
+            // 
+            // listBoxTemperature
+            // 
+            this.listBoxTemperature.FormattingEnabled = true;
+            this.listBoxTemperature.Location = new System.Drawing.Point(554, 133);
+            this.listBoxTemperature.Name = "listBoxTemperature";
+            this.listBoxTemperature.Size = new System.Drawing.Size(217, 277);
+            this.listBoxTemperature.TabIndex = 3;
+            // 
+            // chartTemperature
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartTemperature.ChartAreas.Add(chartArea1);
+            this.chartTemperature.Location = new System.Drawing.Point(7, 7);
+            this.chartTemperature.Name = "chartTemperature";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Name = "Series1";
+            this.chartTemperature.Series.Add(series1);
+            this.chartTemperature.Size = new System.Drawing.Size(541, 421);
+            this.chartTemperature.TabIndex = 2;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.buttonAddTemperature);
+            this.groupBox2.Controls.Add(this.textBoxAddTemperature);
+            this.groupBox2.Location = new System.Drawing.Point(554, 79);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(217, 47);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Добавить значение";
+            // 
+            // buttonAddTemperature
+            // 
+            this.buttonAddTemperature.Location = new System.Drawing.Point(102, 19);
+            this.buttonAddTemperature.Name = "buttonAddTemperature";
+            this.buttonAddTemperature.Size = new System.Drawing.Size(109, 23);
+            this.buttonAddTemperature.TabIndex = 1;
+            this.buttonAddTemperature.Text = "Добавить";
+            this.buttonAddTemperature.UseVisualStyleBackColor = true;
+            this.buttonAddTemperature.Click += new System.EventHandler(this.buttonAddTemperature_Click);
+            // 
+            // textBoxAddTemperature
+            // 
+            this.textBoxAddTemperature.Location = new System.Drawing.Point(6, 20);
+            this.textBoxAddTemperature.Name = "textBoxAddTemperature";
+            this.textBoxAddTemperature.Size = new System.Drawing.Size(90, 20);
+            this.textBoxAddTemperature.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -171,45 +224,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Генерация";
             // 
-            // label1
+            // buttonGenerateTemperature
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Мин.";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Мах.";
-            // 
-            // numericUpDownMinTemperature
-            // 
-            this.numericUpDownMinTemperature.Location = new System.Drawing.Point(40, 18);
-            this.numericUpDownMinTemperature.Maximum = new decimal(new int[] {
-            29,
-            0,
-            0,
-            0});
-            this.numericUpDownMinTemperature.Minimum = new decimal(new int[] {
-            30,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownMinTemperature.Name = "numericUpDownMinTemperature";
-            this.numericUpDownMinTemperature.Size = new System.Drawing.Size(56, 20);
-            this.numericUpDownMinTemperature.TabIndex = 2;
-            this.numericUpDownMinTemperature.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            -2147483648});
+            this.buttonGenerateTemperature.Location = new System.Drawing.Point(102, 18);
+            this.buttonGenerateTemperature.Name = "buttonGenerateTemperature";
+            this.buttonGenerateTemperature.Size = new System.Drawing.Size(109, 43);
+            this.buttonGenerateTemperature.TabIndex = 4;
+            this.buttonGenerateTemperature.Text = "Сгенерировать";
+            this.buttonGenerateTemperature.UseVisualStyleBackColor = true;
+            this.buttonGenerateTemperature.Click += new System.EventHandler(this.buttonGenerateTemperature_Click);
             // 
             // numericUpDownMaxTemperature
             // 
@@ -233,84 +256,65 @@
             0,
             0});
             // 
-            // buttonGenerateTemperature
+            // numericUpDownMinTemperature
             // 
-            this.buttonGenerateTemperature.Location = new System.Drawing.Point(102, 18);
-            this.buttonGenerateTemperature.Name = "buttonGenerateTemperature";
-            this.buttonGenerateTemperature.Size = new System.Drawing.Size(109, 43);
-            this.buttonGenerateTemperature.TabIndex = 4;
-            this.buttonGenerateTemperature.Text = "Сгенерировать";
-            this.buttonGenerateTemperature.UseVisualStyleBackColor = true;
-            this.buttonGenerateTemperature.Click += new System.EventHandler(this.buttonGenerateTemperature_Click);
+            this.numericUpDownMinTemperature.Location = new System.Drawing.Point(40, 18);
+            this.numericUpDownMinTemperature.Maximum = new decimal(new int[] {
+            29,
+            0,
+            0,
+            0});
+            this.numericUpDownMinTemperature.Minimum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownMinTemperature.Name = "numericUpDownMinTemperature";
+            this.numericUpDownMinTemperature.Size = new System.Drawing.Size(56, 20);
+            this.numericUpDownMinTemperature.TabIndex = 2;
+            this.numericUpDownMinTemperature.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
             // 
-            // groupBox2
+            // label2
             // 
-            this.groupBox2.Controls.Add(this.buttonAddTemperature);
-            this.groupBox2.Controls.Add(this.textBoxAddTemperature);
-            this.groupBox2.Location = new System.Drawing.Point(554, 79);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(217, 47);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Добавить значение";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Мах.";
             // 
-            // textBoxAddTemperature
+            // label1
             // 
-            this.textBoxAddTemperature.Location = new System.Drawing.Point(6, 20);
-            this.textBoxAddTemperature.Name = "textBoxAddTemperature";
-            this.textBoxAddTemperature.Size = new System.Drawing.Size(90, 20);
-            this.textBoxAddTemperature.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Мин.";
             // 
-            // buttonAddTemperature
+            // tabPagePressure
             // 
-            this.buttonAddTemperature.Location = new System.Drawing.Point(102, 19);
-            this.buttonAddTemperature.Name = "buttonAddTemperature";
-            this.buttonAddTemperature.Size = new System.Drawing.Size(109, 23);
-            this.buttonAddTemperature.TabIndex = 1;
-            this.buttonAddTemperature.Text = "Добавить";
-            this.buttonAddTemperature.UseVisualStyleBackColor = true;
-            this.buttonAddTemperature.Click += new System.EventHandler(this.buttonAddTemperature_Click);
-            // 
-            // chartTemperature
-            // 
-            chartArea38.Name = "ChartArea1";
-            this.chartTemperature.ChartAreas.Add(chartArea38);
-            this.chartTemperature.Location = new System.Drawing.Point(7, 7);
-            this.chartTemperature.Name = "chartTemperature";
-            series38.ChartArea = "ChartArea1";
-            series38.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series38.Name = "Series1";
-            this.chartTemperature.Series.Add(series38);
-            this.chartTemperature.Size = new System.Drawing.Size(541, 439);
-            this.chartTemperature.TabIndex = 2;
-            // 
-            // listBoxTemperature
-            // 
-            this.listBoxTemperature.FormattingEnabled = true;
-            this.listBoxTemperature.Location = new System.Drawing.Point(554, 133);
-            this.listBoxTemperature.Name = "listBoxTemperature";
-            this.listBoxTemperature.Size = new System.Drawing.Size(217, 277);
-            this.listBoxTemperature.TabIndex = 3;
-            // 
-            // buttonResetTemperature
-            // 
-            this.buttonResetTemperature.Location = new System.Drawing.Point(662, 416);
-            this.buttonResetTemperature.Name = "buttonResetTemperature";
-            this.buttonResetTemperature.Size = new System.Drawing.Size(109, 23);
-            this.buttonResetTemperature.TabIndex = 4;
-            this.buttonResetTemperature.Text = "Сбросить";
-            this.buttonResetTemperature.UseVisualStyleBackColor = true;
-            this.buttonResetTemperature.Click += new System.EventHandler(this.buttonResetTemperature_Click);
-            // 
-            // buttonDeleteTemperature
-            // 
-            this.buttonDeleteTemperature.Location = new System.Drawing.Point(554, 416);
-            this.buttonDeleteTemperature.Name = "buttonDeleteTemperature";
-            this.buttonDeleteTemperature.Size = new System.Drawing.Size(109, 23);
-            this.buttonDeleteTemperature.TabIndex = 5;
-            this.buttonDeleteTemperature.Text = "Удалить";
-            this.buttonDeleteTemperature.UseVisualStyleBackColor = true;
-            this.buttonDeleteTemperature.Click += new System.EventHandler(this.buttonDeleteTemperature_Click);
+            this.tabPagePressure.Controls.Add(this.textBoxPrognosisPressure);
+            this.tabPagePressure.Controls.Add(this.textBoxAvaragePressure);
+            this.tabPagePressure.Controls.Add(this.label9);
+            this.tabPagePressure.Controls.Add(this.label10);
+            this.tabPagePressure.Controls.Add(this.buttonDeletePressure);
+            this.tabPagePressure.Controls.Add(this.buttonResetPressure);
+            this.tabPagePressure.Controls.Add(this.listBoxPressure);
+            this.tabPagePressure.Controls.Add(this.chartPressure);
+            this.tabPagePressure.Controls.Add(this.groupBox3);
+            this.tabPagePressure.Controls.Add(this.groupBox4);
+            this.tabPagePressure.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePressure.Name = "tabPagePressure";
+            this.tabPagePressure.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePressure.Size = new System.Drawing.Size(777, 452);
+            this.tabPagePressure.TabIndex = 1;
+            this.tabPagePressure.Text = "Давление";
+            this.tabPagePressure.UseVisualStyleBackColor = true;
             // 
             // buttonDeletePressure
             // 
@@ -342,15 +346,15 @@
             // 
             // chartPressure
             // 
-            chartArea39.Name = "ChartArea1";
-            this.chartPressure.ChartAreas.Add(chartArea39);
+            chartArea2.Name = "ChartArea1";
+            this.chartPressure.ChartAreas.Add(chartArea2);
             this.chartPressure.Location = new System.Drawing.Point(6, 7);
             this.chartPressure.Name = "chartPressure";
-            series39.ChartArea = "ChartArea1";
-            series39.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series39.Name = "Series1";
-            this.chartPressure.Series.Add(series39);
-            this.chartPressure.Size = new System.Drawing.Size(541, 439);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Name = "Series1";
+            this.chartPressure.Series.Add(series2);
+            this.chartPressure.Size = new System.Drawing.Size(541, 423);
             this.chartPressure.TabIndex = 8;
             // 
             // groupBox3
@@ -467,6 +471,26 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Мин.";
             // 
+            // tabPageHumidity
+            // 
+            this.tabPageHumidity.Controls.Add(this.textBoxPrognosisHumidity);
+            this.tabPageHumidity.Controls.Add(this.textBoxAvarageHumidity);
+            this.tabPageHumidity.Controls.Add(this.label11);
+            this.tabPageHumidity.Controls.Add(this.label12);
+            this.tabPageHumidity.Controls.Add(this.buttonDeleteHumidity);
+            this.tabPageHumidity.Controls.Add(this.buttonResetHumidity);
+            this.tabPageHumidity.Controls.Add(this.listBoxHumidity);
+            this.tabPageHumidity.Controls.Add(this.chartHumidity);
+            this.tabPageHumidity.Controls.Add(this.groupBox5);
+            this.tabPageHumidity.Controls.Add(this.groupBox6);
+            this.tabPageHumidity.Location = new System.Drawing.Point(4, 22);
+            this.tabPageHumidity.Name = "tabPageHumidity";
+            this.tabPageHumidity.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageHumidity.Size = new System.Drawing.Size(777, 452);
+            this.tabPageHumidity.TabIndex = 2;
+            this.tabPageHumidity.Text = "Влажность";
+            this.tabPageHumidity.UseVisualStyleBackColor = true;
+            // 
             // buttonDeleteHumidity
             // 
             this.buttonDeleteHumidity.Location = new System.Drawing.Point(553, 416);
@@ -497,15 +521,15 @@
             // 
             // chartHumidity
             // 
-            chartArea37.Name = "ChartArea1";
-            this.chartHumidity.ChartAreas.Add(chartArea37);
+            chartArea3.Name = "ChartArea1";
+            this.chartHumidity.ChartAreas.Add(chartArea3);
             this.chartHumidity.Location = new System.Drawing.Point(6, 7);
             this.chartHumidity.Name = "chartHumidity";
-            series37.ChartArea = "ChartArea1";
-            series37.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series37.Name = "Series1";
-            this.chartHumidity.Series.Add(series37);
-            this.chartHumidity.Size = new System.Drawing.Size(541, 439);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Name = "Series1";
+            this.chartHumidity.Series.Add(series3);
+            this.chartHumidity.Size = new System.Drawing.Size(541, 421);
             this.chartHumidity.TabIndex = 8;
             // 
             // groupBox5
@@ -622,6 +646,102 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Мин.";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(36, 421);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Среднее:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(265, 421);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 13);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Прогноз:";
+            // 
+            // textBoxAvarageaTemperature
+            // 
+            this.textBoxAvarageaTemperature.Location = new System.Drawing.Point(95, 418);
+            this.textBoxAvarageaTemperature.Name = "textBoxAvarageaTemperature";
+            this.textBoxAvarageaTemperature.Size = new System.Drawing.Size(90, 20);
+            this.textBoxAvarageaTemperature.TabIndex = 2;
+            // 
+            // textBoxPrognosisTemperature
+            // 
+            this.textBoxPrognosisTemperature.Location = new System.Drawing.Point(324, 418);
+            this.textBoxPrognosisTemperature.Name = "textBoxPrognosisTemperature";
+            this.textBoxPrognosisTemperature.Size = new System.Drawing.Size(90, 20);
+            this.textBoxPrognosisTemperature.TabIndex = 8;
+            // 
+            // textBoxPrognosisPressure
+            // 
+            this.textBoxPrognosisPressure.Location = new System.Drawing.Point(323, 416);
+            this.textBoxPrognosisPressure.Name = "textBoxPrognosisPressure";
+            this.textBoxPrognosisPressure.Size = new System.Drawing.Size(90, 20);
+            this.textBoxPrognosisPressure.TabIndex = 15;
+            // 
+            // textBoxAvaragePressure
+            // 
+            this.textBoxAvaragePressure.Location = new System.Drawing.Point(94, 416);
+            this.textBoxAvaragePressure.Name = "textBoxAvaragePressure";
+            this.textBoxAvaragePressure.Size = new System.Drawing.Size(90, 20);
+            this.textBoxAvaragePressure.TabIndex = 12;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(264, 419);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 13);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Прогноз:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(35, 419);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(53, 13);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Среднее:";
+            // 
+            // textBoxPrognosisHumidity
+            // 
+            this.textBoxPrognosisHumidity.Location = new System.Drawing.Point(324, 416);
+            this.textBoxPrognosisHumidity.Name = "textBoxPrognosisHumidity";
+            this.textBoxPrognosisHumidity.Size = new System.Drawing.Size(90, 20);
+            this.textBoxPrognosisHumidity.TabIndex = 15;
+            // 
+            // textBoxAvarageHumidity
+            // 
+            this.textBoxAvarageHumidity.Location = new System.Drawing.Point(95, 416);
+            this.textBoxAvarageHumidity.Name = "textBoxAvarageHumidity";
+            this.textBoxAvarageHumidity.Size = new System.Drawing.Size(90, 20);
+            this.textBoxAvarageHumidity.TabIndex = 12;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(265, 419);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 13);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Прогноз:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(36, 419);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(53, 13);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Среднее:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -633,15 +753,16 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageTemperature.ResumeLayout(false);
-            this.tabPagePressure.ResumeLayout(false);
-            this.tabPageHumidity.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinTemperature)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxTemperature)).EndInit();
+            this.tabPageTemperature.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxTemperature)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinTemperature)).EndInit();
+            this.tabPagePressure.ResumeLayout(false);
+            this.tabPagePressure.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartPressure)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -649,6 +770,8 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxPressure)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinPressure)).EndInit();
+            this.tabPageHumidity.ResumeLayout(false);
+            this.tabPageHumidity.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartHumidity)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -704,6 +827,18 @@
         private System.Windows.Forms.NumericUpDown numericUpDownMinHumidity;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxPrognosisTemperature;
+        private System.Windows.Forms.TextBox textBoxAvarageaTemperature;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxPrognosisPressure;
+        private System.Windows.Forms.TextBox textBoxAvaragePressure;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBoxPrognosisHumidity;
+        private System.Windows.Forms.TextBox textBoxAvarageHumidity;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
 
